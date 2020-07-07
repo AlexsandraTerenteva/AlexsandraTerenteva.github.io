@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Aleo';
+    src: url('../fonts/Aleo-Regular.eot');
+    src: local('Aleo Regular'), local('Aleo-Regular'),
+        url('../fonts/Aleo-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Aleo-Regular.woff2') format('woff2'),
+        url('../fonts/Aleo-Regular.woff') format('woff'),
+        url('../fonts/Aleo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('../fonts/Aleo-Light.eot');
+    src: local('Aleo Light'), local('Aleo-Light'),
+        url('../fonts/Aleo-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Aleo-Light.woff2') format('woff2'),
+        url('../fonts/Aleo-Light.woff') format('woff'),
+        url('../fonts/Aleo-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('../fonts/Aleo-Bold.eot');
+    src: local('Aleo Bold'), local('Aleo-Bold'),
+        url('../fonts/Aleo-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Aleo-Bold.woff2') format('woff2'),
+        url('../fonts/Aleo-Bold.woff') format('woff'),
+        url('../fonts/Aleo-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url('../fonts/Aleo-LightItalic.eot');
+    src: local('Aleo Light Italic'), local('Aleo-LightItalic'),
+        url('../fonts/Aleo-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Aleo-LightItalic.woff2') format('woff2'),
+        url('../fonts/Aleo-LightItalic.woff') format('woff'),
+        url('../fonts/Aleo-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
