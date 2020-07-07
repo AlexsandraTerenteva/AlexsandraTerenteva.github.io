@@ -13,7 +13,6 @@ function getTicket() {
 	const citiesApi = 'js/cities.json';
 	const apiKey = '8828a95a4d72a0c42c92ddda9dd3bd8d',
 		calendar = 'http://min-prices.aviasales.ru/calendar_preload',
-		proxy = ' https://cors-anywhere.herokuapp.com/',
         maxCount = 5;
         
    const getData = (url, callback) => {
@@ -257,7 +256,7 @@ function getTicket() {
         chooseCity(event, dropdownCityTo, inputCityTo);
     });
 
-    getData(proxy + citiesApi, (data) => {
+    getData(citiesApi, (data) => {
 		city = JSON.parse(data);
 		city.sort((a, b) => {
 			if (a.name > b.name) {
