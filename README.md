@@ -4,7 +4,7 @@
 [Проект Snowboards](https://alexsandraterenteva.github.io/SnowBoards/)
 
 
-[Проект Travelly](https://alexsandraterenteva.github.io/Travelly/)
+[Проект Travelly](https://alexsandraterenteva.github.io/Travelly/Travelly/)
 
 
 [Проект Right Place](https://alexsandraterenteva.github.io/Right-place/)
