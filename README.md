@@ -1,1 +1,1 @@
-# Alexsandra Terenteva
+# Александра Терентьева
