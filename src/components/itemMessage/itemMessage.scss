@@ -1,0 +1,17 @@
+.message {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  &__link {
+    text-decoration: none;
+    color: #1698d9;
+    border-bottom: 1px dashed;
+  }
+  &__desc {
+    font-size: 13px;
+    &_disable {
+      color: #f1c40f;
+    }
+  }
+}
