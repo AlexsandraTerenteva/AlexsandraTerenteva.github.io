@@ -1,0 +1,15 @@
+.hero {
+  .title {
+    font-family: "Exo 2.0", sans-serif;
+    font-size: 36px;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+  }
+  .wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: "Trebuchet MS Regular", sans-serif;
+  }
+}
