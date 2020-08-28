@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отгадай число</title>
+    <style>
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+
+      .gameResult {
+        color: white;
+        padding: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Отгадай число
+    </h1>
+    <form action="#">
+        <label for="number">Введите число: </label>
+      <input type="text" name="number" class="number" />
+      <button type="submit" class="btn">Проверить</button>
+    </form>
+    <div class="result">
+        <p class="guesses"></p>
+        <p class="gameResult"></p>
+        <p class="lowOrHi"></p>
+    </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
