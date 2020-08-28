@@ -5,9 +5,9 @@ const formSearch = document.querySelector('.form-seach'),
     dropdownCitiesTo = document.querySelector('.dropdown__cities-to'),
     inputDateDepart = document.querySelector('.input__date-depart'),
     cheapestTicket = document.getElementById('cheapest-ticket'),
-    otherCheapTickets = document.getElementById('other-cheap-tickets');  //  сначала получаем элементы
+    otherCheapTickets = document.getElementById('other-cheap-tickets'); 
     
-//  потом храним данные
+
 
 const citiesApi = 'http://api.travelpayouts.com/data/ru/cities.json',
     proxy = 'https://cors-anywhere.herokuapp.com/',
@@ -18,7 +18,7 @@ const citiesApi = 'http://api.travelpayouts.com/data/ru/cities.json',
 let city = []; 
 
 
-//  затем все функции
+
 
 const getData = (url, callback) => {
     const request = new XMLHttpRequest();
@@ -39,8 +39,7 @@ const getData = (url, callback) => {
 };
 
 const showCity =  (input, list) => {
-   list.textContent = ''; // очищение контента
-
+   list.textContent = ''; 
     if (input.value !== '') {
 
         const filterCity = city.filter((item) => {
@@ -53,8 +52,8 @@ const showCity =  (input, list) => {
         filterCity.forEach((item) => {
             const li = document.createElement('li');
             li.classList.add('dropdown__cities');
-            li.textContent = item.name; // запись города
-            list.append(li); // вставление элемента в конец
+            li.textContent = item.name; 
+            list.append(li); 
 
         });
     }
@@ -64,8 +63,8 @@ const selectCity = (event, input, list) => {
     const target = event.target;
 
     if (target.tagName.toLowerCase() === 'li') {
-        input.value = target.textContent; // запись ли в input
-        list.textContent = ''; // очищение контента
+        input.value = target.textContent; 
+        list.textContent = ''; 
     }
 };
 
@@ -192,11 +191,11 @@ const renderCheap = (data, date) => {
 
 
 
-// и только потом обработчики событий 
+
 
 inputCitiesFrom.addEventListener('input', () => {
     showCity(inputCitiesFrom, dropdownCitiesFrom);
-}); //  по клику на элемент вызывается функция showCity с аргументами inputCitiesFrom, dropdownCitiesFrom 
+}); 
 
 inputCitiesTo.addEventListener('input', () => {
     showCity(inputCitiesTo, dropdownCitiesTo);
@@ -217,7 +216,7 @@ formSearch.addEventListener('submit', (event) => {
         return inputCitiesFrom.value === item.name;
     });
    
-    const cityTo = city.find((item) => inputCitiesTo.value === item.name); // то же самое что и cityFrom просто короче
+    const cityTo = city.find((item) => inputCitiesTo.value === item.name);
 
     const formData = {
         from: cityFrom,
@@ -237,7 +236,7 @@ formSearch.addEventListener('submit', (event) => {
   
 });
 
-// вызовы функций 
+
 
 getData(proxy + citiesApi, (data) => {
     city = JSON.parse(data).filter(item => item.name);
