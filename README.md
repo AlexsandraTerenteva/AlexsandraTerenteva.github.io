@@ -1,4 +1,4 @@
 # AlexsandraTerenteva.github.io
 ## hello
 
-[SnowBoard](http://AlexsandraTerenteva.github.io/SnowBoard).
+[SnowBoards](http://AlexsandraTerenteva.github.io/SnowBoards).
