@@ -1,5 +1,5 @@
 # AlexsandraTerenteva.github.io
-## hello
+## Projects
 
 * [SnowBoards](http://AlexsandraTerenteva.github.io/SnowBoards/).
 * [Bascket](http://AlexsandraTerenteva.github.io/busket/).
