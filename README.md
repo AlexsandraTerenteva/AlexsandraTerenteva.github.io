@@ -3,4 +3,4 @@
 
 * [SnowBoards](http://AlexsandraTerenteva.github.io/SnowBoards/).
 * [Bascket](http://AlexsandraTerenteva.github.io/busket/).
-* [Bascket](http://AlexsandraTerenteva.github.io/ОтгадайЧисло/).
+* [OтгадайЧисло](http://AlexsandraTerenteva.github.io/OтгадайЧисло/).
