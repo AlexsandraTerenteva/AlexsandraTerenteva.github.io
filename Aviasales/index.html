@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviasales</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Aviasales</h1>
+    <main>
+        <section class="wrapper">
+            <form action="#" class="form-seach">
+                <div class="wrapper__seach">
+                    <div class="input">
+                        <label>Откуда
+                            <input type="text" class="input__cities-from" required>
+                        </label>
+                        <ul class="dropdown dropdown__cities-from"></ul>
+                    </div>
+                    <div class="input">
+                        <label>Куда
+                            <input type="text" class="input__cities-to" required>
+                        </label>
+                        <ul class="dropdown dropdown__cities-to"></ul>
+                    </div>
+                    <div class="input input__date-seach">
+                        <label>Отправление
+                            <input type="date" class="input__date-depart" required>
+                        </label>
+                    </div>
+                </div><!--wrapper__seach-->
+                <div class="wrapper__button">
+                    <button class="button button__seach" type="submit">
+                        <span class="button__seach-text">Найти билет</span><span class="icon-plane"></span>
+                    </button>
+                </div>
+            </form>
+        </section>
+        <section class="wrapper">
+
+            <section class="wrapper__ticket" id="cheapest-ticket">
+            </section>
+
+            <section class="block__ticket" id="other-cheap-tickets">
+            </section>
+            
+            
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

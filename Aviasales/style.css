@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 50px;
+    background-color: #1f4f5e;
+    color: #fff;
+}
+ul, h1,h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+label,input {
+    display: block;
+    font-family: 'Arial', sans-serif;
+    border: transparent;
+    cursor: pointer;
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.wrapper__ticket, .block__ticket {
+    display: none;
+}
+.wrapper__seach {
+    display: flex;
+    justify-content: space-around;
+}
+.form-seach {
+   width: 100%;
+    margin: auto;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    outline: transparent;
+    position: relative;
+}
+
+.input__cities-from,
+.input__cities-to,
+.input__date-depart {
+    width: 260px;
+    height: 50px;
+    background-color: #25728a;
+    color: #fff;
+    padding-left: 15px;
+} 
+
+.dropdown {
+    width: 100%;
+    background: #fff;
+    color: #000;
+    max-height: 300px;
+    overflow-x: hidden;
+    position: absolute;
+    top: 70px;
+    z-index: 2;
+} 
+
+.dropdown__cities {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.dropdown__cities:hover {
+    color: #d84d00;
+}
+
+
+.wrapper__button {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 280px;
+    height: 50px;
+    background-color: rgb(233, 130, 12);
+    border: transparent;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button__seach-text {
+   font-family: 'Arial', sans-serif; 
+   font-size: 18px;
+   margin-right: 10px;
+   display: inline-block;
+}
+
+.icon-plane {
+    display: inline-block;
+    transform: rotateZ(45deg);
+    font-size: 22px;
+    
+}
+.ticket {
+    border: 2px solid rgb(233, 130, 12);
+    margin-bottom: 50px;
+}
+.agent {
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #25728a;
+    font-size: 30px;
+}
+.ticket__wrapper {
+    display: flex;
+    min-height: 200px;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+    min-height: 200px;
+    text-align: center;
+    background-color: #25728a;
+}
+
+.button__buy {
+    width: 220px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.right-side {
+    margin-left: 10px;
+    padding: 30px;
+    display: flex;
+    width: 100%;
+    min-height: 200px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    background-color: #25728a;
+    
+}
+.block-left, .block-right {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.city__name {
+   font-weight: bold;
+   font-size: 20px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .wrapper__seach {
+        flex-wrap: wrap;
+    }
+    .input__cities-from,
+    .input__cities-to,
+    .input__date-depart {
+        width: 390px;
+    }
+    .right-side {
+        padding: 10px;
+    }
+    .button__buy {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .ticket {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .ticket__wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-side {
+        min-height: 80px;
+        width: 100%;
+        justify-content: center;
+    }
+    .right-side {
+        margin-top: 5px;
+        margin-left: 0;
+        min-height: 110px;
+    }
+    .city__from {
+        margin-bottom: 10px;
+    }
+    .changes {
+        margin-bottom: 10px;
+    }
+    .block__ticket {
+        margin-top: 50px;
+    }
+    .block-right {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .wrapper {
+        padding: 0 20px;
+    }
+    .input__cities-from,
+    .input__cities-to,
+    .input__date-depart {
+        width: 280px;
+    }
+    .right-side {
+        flex-direction: column;
+    }
+    .block-left {
+        padding-bottom: 20px;
+        align-self: flex-start;
+    }
+    .block-right {
+        flex-direction: column-reverse;
+        align-self: flex-end;
+    }
+    .city__to {
+        margin-bottom: 10px;
+    }
+    .agent {
+        position: static;
+    }
+}
